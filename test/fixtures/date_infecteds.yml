@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date_infected: MyString
+  animal: one
+  disease: one
+
+two:
+  date_infected: MyString
+  animal: two
+  disease: two

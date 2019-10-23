@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Date Infecteds</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Date infected</th>
+      <th>Animal</th>
+      <th>Disease</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @date_infecteds.each do |date_infected| %>
+      <tr>
+        <td><%= date_infected.date_infected %></td>
+        <td><%= date_infected.animal_id %></td>
+        <td><%= date_infected.disease_id %></td>
+        <td><%= link_to 'Show', date_infected %></td>
+        <td><%= link_to 'Edit', edit_date_infected_path(date_infected) %></td>
+        <td><%= link_to 'Destroy', date_infected, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Date Infected', new_date_infected_path %>
