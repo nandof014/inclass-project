@@ -9,6 +9,7 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+<<<<<<< HEAD
     <style>
       body {
         background-color: lightblue;
@@ -18,4 +19,16 @@
 
     <%= yield %>
   </body>
+=======
+   <body>
+        <div id="header">
+        <h1>Animal Project</h1>
+           <%= link_to 'Animals', animals_path %> 
+            <%= link_to 'Diseases', diseases_path %> 
+            <%= link_to 'Owners', owners_path %> 
+            <%= link_to 'Date of Infections', date_infecteds_path %> 
+        </div>
+        <%= yield %>
+    </body>
+>>>>>>> d76104bfb9fc00dc5ed9ddd727a96e2617ecc2ae
 </html>
