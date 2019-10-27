@@ -7,7 +7,7 @@
 
 <p>
   <strong>Owner:</strong>
-  <%= @animal.owner_id %>
+  <%= @animal.owner.name %>
 </p>
 
 <%= link_to 'Edit', edit_animal_path(@animal) %> |
